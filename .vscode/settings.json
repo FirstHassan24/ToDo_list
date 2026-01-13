@@ -1,0 +1,17 @@
+{
+    "editor.quickSuggestions": {
+        "other": false,
+        "comments": false,
+        "strings": false
+    },
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.inlineSuggest.enabled": false,
+    "editor.parameterHints.enabled": false,
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.tabCompletion": "off",
+    "python.analysis.autoImportCompletions": false,
+    "python.analysis.completeFunctionParens": false,
+    "[python]": {
+        "editor.quickSuggestions": false
+    }
+}
