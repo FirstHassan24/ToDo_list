@@ -8,6 +8,6 @@ class List(models.Model):
 #create the second schema:
 class Item(models.Model):
     name = models.CharField(max_length=100, unique=True)
-    #which list does the item go into?:
+    #which model does the item go into?:
     list_id = models.ForeignKey(List,on_delete=models.CASCADE)
     
