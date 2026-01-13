@@ -4,6 +4,8 @@ from django.db import models
 class List(models.Model):
     #what are the fields we need within the model:
     name = models.CharField(max_length=100, unique=True)
+    def __str__(self):
+        return self.name
 
 #create the second schema:
 class Item(models.Model):
