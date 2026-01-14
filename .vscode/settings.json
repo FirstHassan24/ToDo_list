@@ -12,6 +12,10 @@
     "python.analysis.autoImportCompletions": false,
     "python.analysis.completeFunctionParens": false,
     "[python]": {
-        "editor.quickSuggestions": false
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        }
     }
 }

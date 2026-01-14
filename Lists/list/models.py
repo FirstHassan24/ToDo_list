@@ -9,7 +9,10 @@ class List(models.Model):
 
 #create the second schema:
 class Item(models.Model):
-    name = models.CharField(max_length=100, unique=True)
+    name = models.CharField(max_length=100, unique=True, null=True)
     #which model does the item go into?:
     list_id = models.ForeignKey(List,on_delete=models.CASCADE)
+    #make it human readable:
+    def __str__(self):
+        return self.name
     
