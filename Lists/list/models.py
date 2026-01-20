@@ -15,4 +15,7 @@ class Item(models.Model):
     #make it human readable:
     def __str__(self):
         return self.name
-    
+
+#TODO: 1.make a function so the user can can create a category,
+# 2.create a template named board and within it is a link to create a category
+#3.make each category a link that leads  to its own todo list
