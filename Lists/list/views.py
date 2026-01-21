@@ -17,9 +17,19 @@ def create_list(request):
             form.save()
             #after creating send the user back to the board:
             return redirect("board")
-        #TODO:1.0 create a homapge url called board
-        #TODO:1.1 CReat a function that displays the categorys:
-        
+    #if the user is just visiting the page return an empty form:
+    else:
+        form=ListForm()
+        #render the form  inside the form template
+        #TODO: create a List_form.html template
+        #CReat a function that displays the categorys in the main page:
+        def board(request):
+            #store all the models in a variable:
+            categorys = List.objects.all()
+            items = Item.objects.all()
+            #TODO:create a bord.html template and then render this view their:
+
+
 
 
 
