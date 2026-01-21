@@ -13,6 +13,11 @@ def create_list(request):
         form=ListForm(request.POST)
         #chech if the form fields are valid(non empy,correctly typed,etc):
         if form.is_valid():
-                
+            #save it to the DB:
+            form.save()
+            #after creating send the user back to the board:
+            return redirect()
+        #TODO:1.0 create a homapge url called board
+
 
 
