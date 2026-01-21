@@ -1,5 +1,5 @@
 from django.urls import path
 from . import views
 urlpatterns = [
-    path("",views.board_categorys)
+    path("",views.board_categorys,name="board")
 ]

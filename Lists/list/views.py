@@ -16,8 +16,10 @@ def create_list(request):
             #save it to the DB:
             form.save()
             #after creating send the user back to the board:
-            return redirect()
+            return redirect("board")
         #TODO:1.0 create a homapge url called board
+        #TODO:1.1 CReat a function that displays the categorys:
+        
 
 
 
