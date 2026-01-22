@@ -21,13 +21,13 @@ def create_list(request):
     else:
         form=ListForm()
         #render the form  inside the form template
-        #TODO: create a List_form.html template
+        #TODO:2.create a List_form.html template
         #CReat a function that displays the categorys in the main page:
         def board(request):
             #store all the models in a variable:
             categorys = List.objects.all()
-            items = Item.objects.all()
-            #TODO:create a bord.html template and then render this view their:
+            #TODO:1.create a board.html template and then render this view their:
+            return render(request,"List,board.html",{"categorys":categorys})
 
 
 
