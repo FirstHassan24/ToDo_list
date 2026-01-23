@@ -3,7 +3,28 @@
 
 <head>
     <meta name="list board" ,content="making a category for all the lists a user makes">
-    <meta>
+    <title>
+        Categorys
+    </title>
 </head>
+
+<body>
+    <h1>
+        category list
+    </h1>
+    <h2>
+        amount of catergorys:{{categorys|length}}
+    </h2>
+    <!--show system messages:-->
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li>
+            {{ message }}
+        </li>
+    </ul>
+    {% endfor %}
+    {% endif %}
+</body>
 
 </html>
