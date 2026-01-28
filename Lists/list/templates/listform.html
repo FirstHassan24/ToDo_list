@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        creat a list
+    </title>
+</head>
+<!-- render the template for the user to create a list categorry-->
+
+<body>
+    <!--tell django to only send  posted data:-->
+    <form method="post">
+        <!--make it requir a token that protects it from maliciouse attacks-->
+        {% csrf_token %}
+        <!--render the form view that maps to our model(so it wil show up their) -->
+        {{form.as_p}}
+        <!--make a button that the user clicks to save the list-->
+        <button type="submit">
+            create
+        </button>
+    </form>
+    <!--link back to the board-->
+    <a href="{ url board}">
+        back to the board
+    </a>
+</body>
+
+</html>
