@@ -33,6 +33,11 @@
     <ul>
         <!--loop over the list model and display each category as a list:-->
         {%for category in board %}
+        <!--grab the field you want from the model then display it in a list format:-->
+        <li>
+            {{category.category}}
+        </li>
+        {% endfor %}
     </ul>
 </body>
 
