@@ -5,6 +5,11 @@ from .models import List,Item
 from .forms import ListForm
 #import messages for error handling:
 from django.contrib import messages
+#create a function for the mainpage:
+def board_categorys(request):
+    board= List.objects.all()
+    item = Item.objects.all()
+    return render(request,"list/board.html",{"board":board,"item":item})
 #2.make a function so the user can can create a category,link it to the listform:
 def create_list(request):
     #check if the user clicked the link:
