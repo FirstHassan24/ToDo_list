@@ -28,6 +28,12 @@
     <!--every time the user creates a list i want it to show up here:-->
     <!--create a link to make a list using the  creat_list url:-->
     <a href="{% url 'create'%}">create a new category</a>
+    <!--check if the board dict is true:-->
+    {% if board %}
+    <ul>
+        <!--loop over the list model and display each category as a list:-->
+        {%for category in board %}
+    </ul>
 </body>
 
 </html>
